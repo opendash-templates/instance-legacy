@@ -5,19 +5,15 @@ import '../scss/style.scss';
 import openDASH from 'opendash';
 
 // User Adapter:
-import userAdapter from '@opendash/user-adapter-baasbox';
+import userAdapter from '@opendash/user-adapter-local';
 
 // Data Adapter:
 // import {{ opendash-template-name }}DataAdapter from './{{ opendash-template-name }}.data-adapter.js';
 
 // Widgets:
-import widgetName from 'opendash-widget-widget-name';
+// import widgetName from 'opendash-widget-widget-name';
 
 const instance = new openDASH();
-
-instance.env('USER-ADAPTER-BAASBOX-ENDPOINT', 'https://example.com');
-instance.env('USER-ADAPTER-BAASBOX-APP-CODE', '123456789');
-instance.env('USER-ADAPTER-BAASBOX-COLLECTION', 'openDASH2');
 
 instance.env('OD-EVENTS-LOG', true);
 
