@@ -20,7 +20,7 @@ instance.env('OD-EVENTS-LOG', true);
 instance.registerUserAdapter(userAdapter);
 // instance.registerDataAdapter('{{ opendash-template-name }}', {{ opendash-template-name }}DataAdapter);
 
-// instance.registerWidget('widgetName', widgetName());
+// instance.registerWidget(widgetName);
 
 // App initialisieren:
 const app = angular.module('app', [instance.name]);
